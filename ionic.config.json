@@ -1,0 +1,7 @@
+{
+  "name": "cs-start-anim",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
