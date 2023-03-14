@@ -1,20 +1,20 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content [fullscreen]="true" [scrollEvents]="true" (ionScroll)="handleScroll($any($event))">
+  <!-- This is the purple header at the top of the page. It must be fixed height-->
+  <div class="header">My Header</div>
+  <!-- Below the headerHeight is the height of the header should above in pixels-->
+  <app-sticky [backgroundColor]="'purple'" [scrollTop]="scrollTop" [headerHeight]="100">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-buttons>
+        <ion-button><ion-icon name="cafe-outline"></ion-icon></ion-button>
+        <ion-button><ion-icon name="grid-outline"></ion-icon></ion-button>
+        <ion-button><ion-icon name="people-outline"></ion-icon></ion-button>
+        <ion-button><ion-icon name="calendar-outline"></ion-icon></ion-button>
+      </ion-buttons>
     </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  </app-sticky>
+  
+    <ion-list>
+      <ion-item *ngFor="let item of items">{{item}}</ion-item>
+    </ion-list>
+  
 </ion-content>

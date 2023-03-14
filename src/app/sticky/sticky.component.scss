@@ -1,0 +1,16 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: env(safe-area-inset-top);
+
+    z-index:9999;
+}
+
+.normal {
+    position: relative;
+}
+
+:root {
+    --sat: env(safe-area-inset-top);
+}
