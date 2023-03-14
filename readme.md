@@ -1,6 +1,8 @@
 # Sticky header sample
 This sample implements a "sticky" header in [sticky.component.ts](src/app/sticky/sticky.component.ts).
 
+https://user-images.githubusercontent.com/84595830/225166544-3b37e7d3-cf82-4ac0-9d2b-efdaef955419.mp4
+
 It is used in [home.page.html](src/app/home/home.page.html):
 ```html
 <ion-content [fullscreen]="true" [scrollEvents]="true" (ionScroll)="handleScroll($any($event))">
