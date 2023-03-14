@@ -4,7 +4,7 @@ const config: CapacitorConfig = {
   appId: 'cs.start.anim',
   appName: 'cs-start-anim',
   webDir: 'www',
-  bundledWebRuntime: false
+  bundledWebRuntime: false   
 };
 
 export default config;
